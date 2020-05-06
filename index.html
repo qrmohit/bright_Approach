@@ -95,7 +95,7 @@
 
     <div class="container" id="register">
       <div class="row">
-         <form method="POST" data-netlify="true" class="colo-12 submit jumbotron">
+         <form method="POST" data-netlify="true" data-netlify-recaptcha="true" class="colo-12 submit jumbotron">
            <h3 class="feature-title">Register</h3>
 <div class="form-group">
   <input type="text" class="form-control" placeholder="Name" name="name">
@@ -106,7 +106,8 @@
 <div class="form-group">
   <textarea class="form-control" rows="4" name="describe-yourself" placeholder="Write something about yourself..."></textarea>
 </div>
-<input type="submit" class="btn btn-secondary" value="Send" name="">   
+<div class="form-group" data-netlify-recaptcha="true"></div>                                                                                                                 
+<input type="submit" class="btn btn-secondary" value="Send" name="submit">   
          </form>
        </div>
      </div>
